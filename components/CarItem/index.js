@@ -6,7 +6,7 @@ import StyledButton from "../StyledButton/index";
 const CarItem = (props) => {
   //cta= call to action
 
-  const { name, tagline, taglineCTA, image } = props;
+  const { name, tagline, taglineCTA, image } = props.cars;
 
   return (
     <View style={styles.carContainer}>
@@ -20,7 +20,6 @@ const CarItem = (props) => {
         <Text style={styles.subtitle}>
           {tagline}{/* '&nbsp;' for space */}
           {" "}
-           
           <Text style={styles.subtitleCTA}>{taglineCTA}</Text>
         </Text>
       </View>
